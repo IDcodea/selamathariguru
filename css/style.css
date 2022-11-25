@@ -1,0 +1,267 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    width: 100%;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/*.navbar	{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-family: sans-serif;
+	height: 75vh;
+	width: 100%;
+	background-image: url(bgheader.jpg);
+	background-size: cover;
+	background-position: center;
+	color: #FDEFF4;
+}*/
+
+nav {
+    position: fixed;
+    top: 0;
+    z-index: 999;
+    width: 100%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background: #fff;
+    font-family: sans-serif;
+    box-shadow: 7px 7px 20px rgba(0, 0, 0, 0.4);
+    margin-bottom: 100px;
+    animation: nav 1s ease;
+}
+
+
+ul li {
+    display: inline;
+    margin-right: 8px;
+}
+
+ul li a {
+    text-decoration: none;
+    color: #355764;
+    font-size: 18px;
+    transition: all 0.4s ease;
+}
+
+ul li a:hover {
+    opacity: 0.6;
+}
+
+hr {
+    margin: 0 30px;
+    margin-top: 30px;
+}
+
+
+.kanan {
+    margin-left: auto;
+}
+
+.pembukaan {
+    text-align: center;
+    width: 100%;
+    margin-top: 140px;
+    padding: 0 120px;
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+    line-height: 22px;
+}
+
+
+.container {
+    width: 100%;
+    padding: 0 60px;
+    display: flex;
+    box-sizing: border-box;
+    margin-top: 150px;
+}
+
+.row {
+    margin-top: 50px;
+    text-align: justify;
+    flex-direction: row;
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+}
+
+.col1 {
+    width: 50%;
+    line-height: 20px;
+}
+
+.col2 {
+    flex-basis: 50%;
+}
+
+.indonesia {
+    width: 400px;
+    margin-left: 100px;
+    border-radius: 10px;
+    transition: all 0.6s ease;
+    cursor: pointer;
+}
+
+.gambar {
+    transition: all 0.6s ease;
+}
+
+
+.gambar:hover {
+    transform: translateY(-40px);
+    /*box-shadow: 7px 7px 28px rgba(0,0,0,0.4);*/
+}
+
+.col2 {
+    line-height: 20px;
+
+}
+
+.pembukaan h1 {
+    animation: h1 1s ease;
+}
+
+.pembukaan p {
+    animation: p 1s ease;
+}
+
+.pembukaan img {
+    animation: garuda 1s ease;
+}
+
+@keyframes nav {
+    from {
+        top: -70px;
+    }
+
+    to {
+        top: 0;
+    }
+}
+
+@keyframes h1 {
+    from {
+        transform: translateX(-80px);
+        opacity: 0.2;
+    }
+
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes p {
+    from {
+        transform: translateX(80px);
+        opacity: 0.2;
+    }
+
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes garuda {
+    from {
+        transform: translateY(40px);
+        opacity: 0.2;
+    }
+
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+/*indonesia.figoarbiansyah.repl.co*/
+
+
+footer {
+    margin: auto;
+    padding: 30px;
+    text-align: center;
+    font-family: sans-serif;
+}
+
+@media screen and (max-width: 576px) {
+
+    body {
+        margin: 0;
+        padding: 0 20px;
+        width: 100%;
+    }
+
+    header {
+        width: 100%;
+        display: none;
+    }
+
+    nav {
+        width: 100%;
+        padding: 0;
+        margin: 0;
+    }
+
+
+    hr {
+        margin: 0;
+    }
+
+    .pembukaan {
+        padding: 0;
+        margin-top: 30px;
+        width: 100%;
+    }
+
+    .pembukaan h1 {
+        line-height: 20px;
+    }
+
+    .container {
+        padding: 10px;
+        width: 100%;
+        margin: 0;
+    }
+
+    .row {
+        flex-direction: column;
+        padding: 0;
+    }
+
+    .indonesia {
+        margin: 0;
+    }
+
+    .jajah {
+        margin: 0;
+    }
+
+    .col {
+        text-align: center;
+        margin: auto;
+        width: 100%;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    .col p {
+        text-align: justify;
+    }
+
+    .col img {
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+
+    .pembukaan h1 {
+        line-height: 32px;
+    }
+}
