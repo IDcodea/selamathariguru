@@ -13,26 +13,9 @@
       referrerpolicy="no-referrer"
     />
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-    <script>
-      var isChrome =
-        /Chrome/.test(navigator.userAgent) &&
-        /Google Inc/.test(navigator.vendor)
-      if (!isChrome) {
-        $("#iframeAudio").remove()
-      } else {
-        $("#playAudio").remove() // just to make sure that it will not have 2x audio in the background
-      }
-    </script>
     <title>SELAMAT HARI GURU NASIONAL</title>
   </head>
   <body>
-    <iframe
-      src="terimakasihguru.mp3"
-      allow="autoplay"
-      style="display: none"
-      id="iframeAudio"
-    >
-    </iframe>
     <header>
       <!-- 
       <div class="navbar">
@@ -53,7 +36,7 @@
     </header>
 
     <div class="pembukaan">
-      <audio autoplay loop id="playAudio">
+      <audio autoplay="true" controls="true" loop=""true>
         <source src="terimakasihguru.mp3" type="audio/mpeg" />
         gagal
       </audio>
